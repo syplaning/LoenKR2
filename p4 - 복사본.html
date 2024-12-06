@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로엔코리아-안전발걸음</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/sub.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.cdnfonts.com/css/nanumsquare-neo" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <header class="customer_header">
+    <div class="header_inner">
+      <h1>
+        <a href="index.html">
+          <img src="img/logo.png" alt="logo">
+        </a>
+      </h1>
+
+      <ul class="h_list">
+        <li><a href="p1.html">소개</a></li>
+        <li><a href="p2.html">주요기능</a></li>
+        <li><a href="p3.html">아이길</a></li>
+        <li><a href="p4.html" class="liston">고객센터</a></li>
+      </ul>
+
+      <div class="ham">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- section_01 -->
+  <section class=" customer_s1">
+    <div class="customer_s1_i">
+      <div class="introduce_s1_left customer_s1_left">
+        <h3>CUSTOMER</h3>
+        <h2>
+          <span class="intro_span_bold">안전발걸음</span>의 고객게시판입니다.<br>
+          언제나 고객님의 곁에서 함께하겠습니다.
+        </h2>
+      </div>
+
+      <div class="introduce_s1_right customer_right">
+        <img src="img/customer_i1.png" alt="s1_i1">
+      </div>
+    </div>
+  </section>
+  <!-- section_01 -->
+
+  <section class="customer_s2 s2">
+    <div class="inquiry_inner">
+      <div class="inquiry_cont_box">
+        <div class="bullet" data-aos="fade-up">
+          <form>
+            <div class="bullet_cont">
+              <label for="user-name">기관명*</label>
+              <input type="text" id="user-name" placeholder="기관명을 입력해주세요" onfocus="this.placeholder=''"
+                onblur="this.placeholder='기관명을 입력해주세요'">
+            </div>
+
+            <div class="bullet_cont email_cont">
+              <label for="mail_address">이메일*</label>
+              <input type="email" value="" id="mail_address">
+              <span class="emial_span">@</span>
+              <input type="email" value="" id="email_site">
+              <select name="email_add" id="email_add">
+                <option value="">직접입력</option>
+                <option value="naver">naver.com</option>
+                <option value="gmail">gmail.com</option>
+              </select>
+            </div>
+
+            <div class="bullet_cont number_cont">
+              <div class="number_wrap">
+                <label for="telephone">연락처*</label>
+                <input type="tel" value="010" id="telephone">
+                <span>-</span>
+                <input type="tel" value="" id="tel_mid">
+                <span>-</span>
+                <input type="tel" value="" id="tel_last">
+              </div>
+            </div>
+
+            <div class="bullet_cont radio_cont">
+              <div class="number_wrap radio">
+                <label for="product_b">문의종류</label>
+                <input type='radio' name='inq' value='collabo'>제휴신청
+                <input type='radio' name='inq' value='ask'>1:1문의하기
+              </div>
+            </div>
+
+            <div class="bullet_cont title_cont">
+              <label for="bullet_tit">제목*</label>
+              <input type="text" value="" id="bullet_tit">
+            </div>
+
+            <div class="bullet_cont conts_cont">
+              <label for="context">내용*</label>
+              <textarea name="context" id="context_area" placeholder="내용을 입력해주세요"></textarea>
+            </div>
+
+            <div class="bullet_cont">
+              <label for="file_tit">첨부파일</label>
+              <div class="filebox">
+                <input class="upload_name" id="fileName" placeholder="" readonly>
+                <label for="file">파일 선택</label>
+                <input type="file" id="file" onchange="displayFileName()">
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="btn_wrap">
+          <div class="btn_wrap_i">
+            <button class="btn_item1 regi">
+              <a href="javascript:alert('등록이 완료되었습니다.');" onfocus="this.blur()" class="close_box change">등록</a>
+            </button>
+            <button class="btn_item1 cancel">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="customer_bg">
+      <img src="img/p4_bg1.png" alt="" class="bg1">
+      <img src="img/p4_bg2.png" alt="" class="bg2">
+      <img src="img/p4_bg3.png" alt="" class="bg3">
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer_wrap">
+      <div class="footer_top_wrap">
+        <div class="footer_top_i">
+          <div class="top_left">
+            <div class="f_logo">
+              <img src="img/f_logo.png" alt="f_logo">
+            </div>
+            <ul class="footer_list">
+              <li>(46742) 부산 강서구 과학산단1로60번길 31, 2비동 207호
+              </li>
+
+              <li>CEO
+                <span class="medium">
+                  우동주
+                </span>
+              </li>
+
+              <li>TEL
+                <span class="medium">051-123-456</span>
+              </li>
+
+              <li>FAX
+                <span class="medium">
+                  051-123-456
+                </span>
+              </li>
+
+              <li>E-mail
+                <span class="medium">
+                  CEO@loenkorea.com
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="top_right">
+            <select class="family">
+              <option>FAMILY SITE</option>
+            </select>
+
+            <div class="footer_right_img">
+              <img src="img/f_right_img.png" alt="i">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_btm">
+        <div class="footer_bottom_cont">
+          <span class="copyright medium">© 2024. LOEN KOREA CO, LTD. all rights reserved.</span>
+          <ul class="footer_btm_list">
+            <li>이용약관</li>
+            <li>개인정보처리방침</li>
+            <li>위치기반서비스 이용약관</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+
+
+
+  <script>
+    function displayFileName() {
+      var fileInput = document.getElementById('file');
+      var fileName = document.getElementById('fileName');
+
+      if (fileInput.files.length > 0) {
+        fileName.value = fileInput.files[0].name;
+      }
+    }
+  </script>
+
+</body>
+
+</html>
